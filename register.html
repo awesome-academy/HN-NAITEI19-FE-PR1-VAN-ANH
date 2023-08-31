@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Company</title>
+
+     <!-- RESET.CSS -->
+     <link rel="stylesheet" href="./assets/css/reset.css">
+
+     <!-- BOOTSTRAP -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+     
+ 
+     <!-- STYLE.CSS -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+ 
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+ 
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+
+    <!-- ============ HEADER ============== -->
+    <header class="header">  
+        <div class="header__top container-fluid">
+            <div class="header-top__container container">
+                <div class="header-top__left list-unstyled">
+                    <li>
+                        <a href="#" class="header-top__left-link header-top__link-active">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-top__left-link">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-top__left-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header-top__left-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </div>
+                <div class="header-top__right list-unstyled">
+                    <li>
+                        <a href="login.html" class="header-top__right-link">
+                            ĐĂNG NHẬP
+                        </a>                    
+                    </li>
+                    <li>
+                        <a href="register.html" class="header-top__right-link">
+                            ĐĂNG KÝ
+                        </a>                    
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="header__center container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo.png" alt="company's logo">
+                </a>
+            </div>
+            
+            <div class="header__infor">
+                <div class="header__hotline">
+                    <div class="hotline__title">
+                        HOTLINE :  
+                    </div>
+                    <div class="hotline__phone">
+                        (04) 9500 9650 - (04) 9500 8850
+                    </div>
+                </div>
+                <div class="header__hotline">
+                    <div class="hotline__title">
+                        ĐẶT HÀNG NHANH : 
+                    </div>
+                    <div class="hotline__phone">
+                        (04) 9500 9650 - (04) 9500 8850
+                    </div>
+                </div>
+                <div class="header__search-bar">
+                    <input type="search" name="search" class="search__field" placeholder="Tìm kiếm...">
+                    <button class="search__btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="navbar__container container">
+                <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="navbar__mega-menu nav-item active nav-item-has-child">
+                            <a href="index.html" class="nav-link">TRANG CHỦ</a>
+
+                            <div class="mega-menu">
+                                <div class="mega-menu__content">
+                                    <div class="mega-menu__list">
+                                        <div class="mega-menu__row row">
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY KHOAN ĐA NĂNG CNC
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy ép gỗ chuẩn nano</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY CẮT PLASMAR
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy ép gỗ chuẩn nano</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY PHAY CÔNG NGHIỆP
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy ép gỗ chuẩn nano</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="mega-menu__row row">
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY ÉP NHỰA THỦ CÔNG
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY UỐNG TÔN ĐIỆN
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <div class="mega-menu__col col-md-4">
+                                                <div class="mega-col__title">
+                                                    <div class="mega-col__title-icon four-squares-icon">
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                        <div class="square"></div>
+                                                      </div>
+                                                    <span class="mega-col__title-text">
+                                                        MÁY NÉN KHÍ CNC
+                                                    </span>
+                                                </div>
+                                                <ul class="mega-col__list list-unstyled">
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy khoan CNC điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy phay đa năng 3R</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy in phun tích điện</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="mega-col__link">
+                                                            <i class="mega-col__icon fa-solid fa-caret-right"></i>
+                                                            <span class="mega-list__text">Máy hàn, máy cắt kim loại</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="mega-menu__img">
+                                        <img src="./assets/image/mega_menu/megamenu.png" alt="Mega menu icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__has-child nav-item">
+                            <a href="#" class="nav-link">GIỚI THIỆU</a>
+                            <div class="intro__menu">
+                                <ul class="intro__list list-unstyled">
+                                    <li>
+                                        <a href="" class="intro__link">
+                                            <i class="intro__icon fa-solid fa-caret-right"></i>
+                                            <span class="intro__text">Giới thiệu chung</span>
+                                        </a>
+                                    </li>
+                                    <li class="intro__system intro__has-child">
+                                        <a href="" class="intro__link">
+                                            <i class="intro__icon fa-solid fa-caret-right"></i>
+                                            <span class="intro__text">Hệ thống cửa hàng</span>
+                                        </a>
+                                        <div class="system__menu">
+                                            <ul class="system__list list-unstyled">
+                                                <li>
+                                                    <a href="" class="system__link">
+                                                        <i class="system__icon fa-solid fa-caret-right"></i>
+                                                        <span class="system__text">Hệ thống cửa hàng A1</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="system__link">
+                                                        <i class="system__icon fa-solid fa-caret-right"></i>
+                                                        <span class="system__text">Hệ thống cửa hàng A2</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="system__link">
+                                                        <i class="system__icon fa-solid fa-caret-right"></i>
+                                                        <span class="system__text">Hệ thống cửa hàng A3</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="system__link">
+                                                        <i class="system__icon fa-solid fa-caret-right"></i>
+                                                        <span class="system__text">Hệ thống cửa hàng A4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="intro__link">
+                                            <i class="intro__icon fa-solid fa-caret-right"></i>
+                                            <span class="intro__text">Chính sách ưu đãi</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="intro__link">
+                                            <i class="intro__icon fa-solid fa-caret-right"></i>
+                                            <span class="intro__text">Thông tin tuyển dụng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">TIN KHUYẾN MẠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">DỊCH VỤ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__cart">
+                    <img src="./assets/image/cart.png" alt="cart icon">
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ============ MAIN ================ -->
+    <main>
+        <div class="register">
+            <div class="register__container container">
+                <div class="register__top-title">
+                    <a href="index.html" class="register__link">
+                        <span>Trang chủ</span>
+                    </a>
+                    <i class="register__icon fa-solid fa-caret-right"></i>
+                    <span>
+                        Đăng ký
+                    </span>
+                </div>
+                <form id="registration-form">
+                    <div class="registration__title">
+                        THÔNG TIN CÁ NHÂN:
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="fullName">Họ và tên:</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="phone">Số điện thoại:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="address">Địa chỉ:</label>
+                            <input type="text" class="form-control" id="address" name="address" required>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <span>
+                            <input type="checkbox" class="checkbox__check" name="subscribe">
+                        </span>
+                        <span class="checkbox__label">
+                            Đăng ký để nhận tin tức qua email
+                        </span>
+                    </div>
+                    <div class="registration__title">
+                        THÔNG TIN ĐĂNG NHẬP:
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="fullName">Họ và tên:</label>
+                            <input type="text" class="form-control" id="fullName-lg" name="fullName-lg" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label required-label" for="email">Email:</label>
+                            <input type="email" class="form-control" id="email-lg" name="email-lg" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form__btn btn--bg-black" onclick="goBackToHomePage()">QUAY LẠI</button>
+                        <button type="submit" class="form__btn btn--bg-primary">ĐĂNG KÝ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- ============ FOOTER =============== -->
+    <footer class="footer container-fluid">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer-top__row">
+                    <div class="footer-top__col">
+                        <div class="footer-col__title">
+                            <div class="footer-col__title-icon four-squares-icon">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                              </div>
+                            <span class="footer-col__title-text">
+                                VỀ CHÚNG TÔI
+                            </span>
+                        </div>
+                        <div class="footer-col__content">
+                            Công ty Cổ phần Công nghệ DKT đã và đang khẳng định được vị trí hàng đầu trong lĩnh vực Thương mại điện tử.
+                        </div>
+                        <div class="footer-col__list list-unstyled">
+                            <li>
+                                <i class="footer-col__icon fa-solid fa-location-dot"></i>
+                                <div class="footer-col__description">
+                                    Tầng 4 - Toàn nhà Ha Noi Group
+                                    </br>
+                                    442 Đội Cấn - Ba Đình - Hà Nội
+                                </div>
+                            </li>
+                            <li>
+                                <i class="footer-col__icon fa-solid fa-envelope"></i>
+                                <div class="footer-col__description">
+                                    support@dkt.com.vn
+                                </div>
+                            </li>
+                            <li>
+                                <i class="footer-col__icon fa-solid fa-phone"></i>
+                                <div class="footer-col__description">
+                                    (84-4) 66558868  -  (84-4) 37868904
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="footer-top__col">
+                        <div class="footer-col__title">
+                            <div class="footer-col__title-icon four-squares-icon">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                              </div>
+                            <span class="footer-col__title-text">
+                                CHÍNH SÁCH
+                            </span>
+                        </div>
+                        <div class="footer-col__list list-unstyled">
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Chính sách giao hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Chính sách đổi sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Chính sách bảo hành
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Chính sách trả góp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Giới thiệu hàng đổi trả
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                   Vận chuyển miễn phí 
+                                </a>
+                            </li>
+                        </div>          
+                    </div>
+
+                    <div class="footer-top__col">
+                        <div class="footer-col__title">
+                            <div class="footer-col__title-icon four-squares-icon">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                              </div>
+                            <span class="footer-col__title-text">
+                                DỊCH VỤ & HỖ TRỢ
+                            </span>
+                        </div>
+                        <div class="footer-col__list list-unstyled">
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Hệ thống cửa hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Hướng dẫn mua hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Hướng dẫn thanh toán
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Tích điểm đổi thưởng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Dịch vụ trả hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                   Câu hỏi thường gặp
+                                </a>
+                            </li>
+                        </div>              
+                    </div>
+
+                    <div class="footer-top__col">
+                        <div class="footer-col__title">
+                            <div class="footer-col__title-icon four-squares-icon">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                              </div>
+                            <span class="footer-col__title-text">
+                                TIN TỨC - SỰ KIỆN
+                            </span>
+                        </div>
+                        <div class="footer-col__list list-unstyled">
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Tin tức mới nhất
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Tin tức khuyến mại
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Tuyển dụng, đãi ngộ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Download tài liệu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    Chương trình đối tác
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                   Nhà phát triển ứng dụng
+                                </a>
+                            </li>
+                        </div>                 
+                    </div>
+
+                    <div class="footer-top__col">
+                        <div class="footer-col__title">
+                            <div class="footer-col__title-icon four-squares-icon">
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                                <div class="square"></div>
+                              </div>
+                            <span class="footer-col__title-text">
+                                KẾT NỐI
+                            </span>
+                        </div>
+                        <div class="footer-col__list-2 list-unstyled">
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    <i class="footer-col__icon fa-brands fa-facebook-f"></i>
+                                    <div class="footer-col__description">
+                                        Facebook
+                                    </div> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    <i class="footer-col__icon fa-brands fa-twitter"></i>
+                                    <div class="footer-col__description">
+                                        Twitter
+                                    </div>   
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    <i class="footer-col__icon fa-brands fa-google-plus-g"></i>
+                                    <div class="footer-col__description">
+                                        Google
+                                    </div>  
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    <i class="footer-col__icon fa-brands fa-skype"></i>
+                                    <div class="footer-col__description">
+                                        Skype
+                                    </div> 
+                                </a>  
+                            </li>
+                            <li>
+                                <a href="#" class="footer-col__link">
+                                    <i class="footer-col__icon fa-brands fa-instagram"></i>
+                                    <div class="footer-col__description">
+                                        Instagram
+                                    </div>
+                                </a>
+                            </li>
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="footer__separate"></div>
+            <div class="footer__bottom">
+                <div class="footer-bottom__col">
+                    <div class="footer-bottom__title">
+                        Thanh toán:
+                    </div>
+                    <div class="footer-bottom__thanhtoan-grid">
+                        <img src="./assets/image/thanhtoan/techcombank.png" alt="TechcomBank">
+                        <img src="./assets/image/thanhtoan/viettinbank.png" alt="ViettinBank">
+                        <img src="./assets/image/thanhtoan/vpbank.png" alt="VPBank">
+                        <img src="./assets/image/thanhtoan/tienphong.png" alt="Tien Phong Bank">
+                        <img src="./assets/image/thanhtoan/maritimebank.png" alt="Mari Time Bank">
+                        <img src="./assets/image/thanhtoan/dongabank.png" alt="Dong A Bank">
+                        <img src="./assets/image/thanhtoan/abbank.png" alt="AB Bank">
+                        <img src="./assets/image/thanhtoan/vietcapital.png" alt="Viet Capital Bank">
+                    </div>
+                </div>
+                <div class="footer-bottom__col">
+                    <div class="footer-bottom__title">
+                        Giải đáp nhanh:
+                    </div>
+                    <div class="footer-bottom__giaidap">
+                        <div class="footer-giaidap__col">
+                            <div class="footer-giaidap__icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="footer-giaidap__content">
+                                <div class="footer-giaidap__content-title">
+                                    Tư vấn miễn phí (24/7)
+                                </div>
+                                <div class="footer-giaidap__content-phone">
+                                    1900 650 650
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-giaidap__col">
+                            <div class="footer-giaidap__icon">
+                                <i class="fa-solid fa-comment-dots"></i>
+                            </div>
+                            <div class="footer-giaidap__content">
+                                <div class="footer-giaidap__content-title">
+                                    Góp ý - Phản hồi - Thắc mắc
+                                </div>
+                                <div class="footer-giaidap__content-phone">
+                                    1900 650 650
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
