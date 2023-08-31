@@ -1,0 +1,1018 @@
+{
+  "products": [
+      {
+          "id": 1,
+          "name": "MÁY KHOAN CNC 3000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 2000000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/1.png",
+          "comment": 20,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 2,
+          "name": "MÁY KHOAN CNC 2000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 1800000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/2.png",
+          "comment": 19,
+          "status":"hot",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 3,
+          "name": "MÁY KHOAN CNC 1000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 1500000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/3.png",
+          "comment": 18,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 4,
+          "name": "MÁY KHOAN CNC 5000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 2500000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/4.png",
+          "comment": 17,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 5,
+          "name": "MÁY KHOAN CNC 4000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 2200000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/5.png",
+          "comment": 13,
+          "status": "hot",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 6,
+          "name": "MÁY KHOAN CNC 6000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 2800000,
+          "category": "Máy khoan",
+          "picture": "./assets/image/product/6.png",
+          "comment": 14,
+          "status": "hot",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 7,
+          "name": "MÁY KHOAN CNC 7000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 3000000,
+          "category": "Máy CNC",
+          "picture": "./assets/image/product/7.png",
+          "comment": 15,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 8,
+          "name": "MÁY KHOAN CNC 8000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 3200000,
+          "category": "Máy CNC",
+          "picture": "./assets/image/product/8.png",
+          "comment": 12,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+          "id": 9,
+          "name": "MÁY KHOAN CNC 9000",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "price": 3400000,
+          "category": "Máy CNC",
+          "picture": "./assets/image/product/9.png",
+          "comment": 11,
+          "status": "new",
+          "color": [
+            "red",
+            "yellow",
+            "blue"
+          ]
+      },
+      {
+        "id": 10,
+        "name": "MÁY KHOAN CNC 9000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3400000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/9.png",
+        "comment": 16,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+      {
+        "id": 11,
+        "name": "MÁY KHOAN CNC 3000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2000000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/1.png",
+        "comment": 31,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "MÁY KHOAN CNC 2000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1800000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/2.png",
+        "comment": 20,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "MÁY KHOAN CNC 1000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1500000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/3.png",
+        "comment": 9,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "MÁY KHOAN CNC 5000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2500000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/4.png",
+        "comment": 12,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "MÁY KHOAN CNC 4000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2200000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/5.png",
+        "comment": 13,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "MÁY KHOAN CNC 6000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2800000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/6.png",
+        "comment": 19,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "MÁY KHOAN CNC 7000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3000000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/7.png",
+        "comment": 10,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3200000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/8.png",
+        "comment": 18,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "MÁY KHOAN CNC 9000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3400000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/9.png",
+        "comment": 17,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3200000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/8.png",
+        "comment": 15,
+        "status": "old",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "MÁY KHOAN CNC 3000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2000000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/1.png",
+        "comment": 31,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "MÁY KHOAN CNC 2000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1800000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/2.png",
+        "comment": 20,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "MÁY KHOAN CNC 1000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1500000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/3.png",
+        "comment": 9,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "MÁY KHOAN CNC 5000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2500000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/4.png",
+        "comment": 12,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "MÁY KHOAN CNC 4000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2200000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/5.png",
+        "comment": 13,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "MÁY KHOAN CNC 6000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2800000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/6.png",
+        "comment": 19,
+        "status": "old",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "MÁY KHOAN CNC 7000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3000000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/7.png",
+        "comment": 10,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3200000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/8.png",
+        "comment": 18,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "MÁY KHOAN CNC 9000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3400000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/9.png",
+        "comment": 17,
+        "status": "old",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3200000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/8.png",
+        "comment": 15,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "MÁY KHOAN CNC 3000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2000000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/5.png",
+        "comment": 20,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "MÁY KHOAN CNC 2000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1800000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/2.png",
+        "comment": 19,
+        "status":"hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "MÁY KHOAN CNC 1000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1500000,
+        "category": "Máy in 3D",
+        "picture": "./assets/image/product/7.png",
+        "comment": 18,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "MÁY KHOAN CNC 5000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2500000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/8.png",
+        "comment": 17,
+        "status": "new",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "MÁY KHOAN CNC 4000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2200000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/1.png",
+        "comment": 13,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "MÁY KHOAN CNC 6000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 2800000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/10.png",
+        "comment": 14,
+        "status": "hot",
+        "color": [
+          "red",
+          "yellow",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 37,
+        "name": "MÁY KHOAN CNC 7000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3000000,
+        "category": "Máy khác",
+        "picture": "./assets/image/product/7.png",
+        "comment": 15,
+        "status": "new",
+        "color": [
+          "red",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 38,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3200000,
+        "category": "Máy khác",
+        "picture": "./assets/image/product/8.png",
+        "comment": 12,
+        "status": "new",
+        "color": [
+          "red",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 39,
+        "name": "MÁY KHOAN CNC 9000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 3400000,
+        "category": "Máy khác",
+        "picture": "./assets/image/product/4.png",
+        "comment": 11,
+        "status": "new",
+        "color": [
+          "red",
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+      "id": 40,
+      "name": "MÁY KHOAN CNC 9000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3400000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/2.png",
+      "comment": 16,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+    {
+      "id": 41,
+      "name": "MÁY KHOAN CNC 3000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2000000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/1.png",
+      "comment": 31,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 42,
+      "name": "MÁY KHOAN CNC 2000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 1800000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/2.png",
+      "comment": 20,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 43,
+      "name": "MÁY KHOAN CNC 1000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 1500000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/3.png",
+      "comment": 9,
+      "status": "hot",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 44,
+      "name": "MÁY KHOAN CNC 5000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2500000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/4.png",
+      "comment": 12,
+      "status": "hot",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 45,
+      "name": "MÁY KHOAN CNC 4000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2200000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/5.png",
+      "comment": 13,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 46,
+      "name": "MÁY KHOAN CNC 6000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2800000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/6.png",
+      "comment": 19,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 47,
+      "name": "MÁY KHOAN CNC 7000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3000000,
+      "category": "Máy CNC",
+      "picture": "./assets/image/product/7.png",
+      "comment": 10,
+      "status": "hot",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 48,
+      "name": "MÁY KHOAN CNC 8000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3200000,
+      "category": "Máy in 3D",
+      "picture": "./assets/image/product/8.png",
+      "comment": 18,
+      "status": "new",
+      "color": [
+        "red",
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 49,
+      "name": "MÁY KHOAN CNC 9000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3400000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/9.png",
+      "comment": 17,
+      "status": "hot",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 50,
+      "name": "MÁY KHOAN CNC 8000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3200000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/8.png",
+      "comment": 15,
+      "status": "old",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 51,
+      "name": "MÁY KHOAN CNC 3000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2000000,
+      "category": "Máy tiện",
+      "picture": "./assets/image/product/1.png",
+      "comment": 31,
+      "status": "hot",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 52,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 1800000,
+      "category": "Máy khác",
+      "picture": "./assets/image/product/10.png",
+      "comment": 20,
+      "status": "new",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 53,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 1500000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/3.png",
+      "comment": 9,
+      "status": "new",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 54,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2500000,
+      "category": "Máy in 3D",
+      "picture": "./assets/image/product/4.png",
+      "comment": 12,
+      "status": "hot",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 55,
+      "name": "MÁY KHOAN CNC 4000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2200000,
+      "category": "Máy tiện",
+      "picture": "./assets/image/product/5.png",
+      "comment": 13,
+      "status": "new",
+      "color": [
+        "blue",
+        "black"
+      ]
+  },
+  {
+      "id": 56,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 2800000,
+      "category": "Máy in 3D",
+      "picture": "./assets/image/product/6.png",
+      "comment": 19,
+      "status": "old",
+      "color": [
+        "blue",
+        "silver"
+      ]
+  },
+  {
+      "id": 57,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3000000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/7.png",
+      "comment": 10,
+      "status": "new",
+      "color": [
+        "blue",
+        "silver"
+      ]
+  },
+  {
+      "id": 58,
+      "name": "MÁY KHOAN CNC 8000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3200000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/10.png",
+      "comment": 18,
+      "status": "hot",
+      "color": [
+        "blue",
+        "silver"
+      ]
+  },
+  {
+      "id": 59,
+      "name": "MÁY KHOAN CNC 9000",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3400000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/9.png",
+      "comment": 17,
+      "status": "old",
+      "color": [
+        "blue",
+        "silver"
+      ]
+  },
+  {
+      "id": 60,
+      "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "price": 3200000,
+      "category": "Máy khoan",
+      "picture": "./assets/image/product/8.png",
+      "comment": 15,
+      "status": "new",
+      "color": [
+        "blue",
+        "silver"
+      ]
+  },
+  {
+        "id": 61,
+        "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1500000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/10.png",
+        "comment": 5,
+        "status": "free",
+        "color": [
+        "blue",
+        "silver"
+        ]
+    },
+    {
+        "id": 62,
+        "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1200000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/11.png",
+        "comment": 10,
+        "status": "free",
+        "color": [
+          "blue",
+          "silver"
+        ]
+    },
+    {
+        "id": 63,
+        "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1000000,
+        "category": "Máy khoan",
+        "picture": "./assets/image/product/12.png",
+        "comment": 25,
+        "status": "free",
+        "color": [
+          "blue",
+          "yellow",
+          "silver"
+        ]
+    },
+    {
+        "id": 64,
+        "name": "MÁY KHOAN BLACK DECKER LOẠI 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1200000,
+        "category": "Máy CNC",
+        "picture": "./assets/image/product/13.png",
+        "comment": 12,
+        "status": "new",
+        "color": [
+          "blue",
+          "silver",
+          "black"
+        ]
+    },
+    {
+        "id": 65,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1100000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/14.png",
+        "comment": 15,
+        "status": "free",
+        "color": [
+          "red",
+          "silver"
+        ]
+    },
+    {
+        "id": 66,
+        "name": "MÁY KHOAN CNC 8000",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "price": 1400000,
+        "category": "Máy tiện",
+        "picture": "./assets/image/product/15.png",
+        "comment": 16,
+        "status": "free",
+        "color": [
+          "blue",
+          "black"
+        ]
+    }
+  ]
+}
