@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Company</title>
 
-     <!-- RESET.CSS -->
-     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- RESET.CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
 
-     <!-- BOOTSTRAP -->
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
- 
-     <!-- STYLE.CSS -->
-     <link rel="stylesheet" href="./assets/css/style.css">
- 
-     <!-- GOOGLE FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
- 
-     <!-- FONT AWESOME -->
-     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.css">
+    <!-- BOOTSTRAP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.css">
+
+
 </head>
 <body>
-
-    <!-- ============ HEADER ============== -->
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="popup__close-overlay"></div>
+        <div class="popup__content" style="background-image: url(./assets/image/popup.png);">
+            <div class="popup__close-btn">
+                <button type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="popup__text">
+                <div class="popup__title text-center">
+                    ĐĂNG KÝ NHẬN TIN TỨC CỦA CHÚNG TÔI
+                </div>
+                <div class="popup__subtitle text-center">
+                    Bạn muốn nhanh chóng nhận các tin tức khuyến mại và ưu đãi lớn của chúng tôi hàng tuần ?
+                    </br>
+                    Hãy đăng ký ngay theo form dưới đây
+                </div>
+                <div class="popup__box">
+                    <div class="popup__input">
+                        <input type="text" class="popup__input-text" placeholder="Nhập email của bạn vào đây...">
+                    </div>
+                    <button type="button" class="popup__box-btn">ĐĂNG KÝ</button>
+                    <div class="popup__checkbox">
+                        <span>
+                            <input type="checkbox" name="subscribe">
+                        </span>
+                        <span class="popup-checkbox__label">
+                            Không hiện lại thông báo này
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ========= HEADER ========== -->
     <header class="header">
         <div class="header__top container-fluid">
             <div class="header-top__container container">
@@ -468,13 +505,400 @@
         </nav>
     </header>
 
+    <!-- ========= MAIN ========= -->
+    
+    <main class="main container">
+        <section class="slider">
+                <div class="slider__row row">
+                    <div class="slider__carousel col-12 col-md-8">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="./assets/image/slider.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/image/slider.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/image/slider.png" alt="Third slide">
+                              </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="slider__col col-12 col-md-4">
+                        <div class="slider__list list-unstyled">
+                            <li class="slider__content">
+                                <div class="slider-list__icon">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+                                <div class="slider-list__content">
+                                    <div class="slider-list__title">
+                                        MIỄN PHÍ VẬN CHUYỂN
+                                    </div>
+                                    <div class="slider-list__description">
+                                        Chúng tôi vận chuyển miễn phí đối với các đơn hàng trị giá tên 100.000 Đ.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__content">
+                                <div class="slider-list__icon">
+                                    <i class="fa-solid fa-arrows-rotate"></i>
+                                </div>
+                                <div class="slider-list__content">
+                                    <div class="slider-list__title">
+                                        CHÍNH SÁCH ĐỔI TRẢ
+                                    </div>
+                                    <div class="slider-list__description">
+                                        Nếu phát hiện lỗi của nhà sản xuất, chúng tôi sẽ đổi mới sản phẩm trong 7 ngày đầu tiên.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__content">
+                                <div class="slider-list__icon">
+                                    <i class="fa-solid fa-gift"></i>
+                                </div>
+                                <div class="slider-list__content">
+                                    <div class="slider-list__title">
+                                        KHUYẾN MẠI HÀNG TUẦN
+                                    </div>
+                                    <div class="slider-list__description">
+                                        Mỗi thứ 7 hàng tuần đều có chương trình giảm giá và khuyến mại.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider__content">
+                                <div class="slider-list__icon">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                </div>
+                                <div class="slider-list__content">
+                                    <div class="slider-list__title">
+                                        CAM KẾT HÀNG CHÍNH HÃNG
+                                    </div>
+                                    <div class="slider-list__description">
+                                        Chúng tôi cam kết bán hàng chính hãng 100% đối với tất cả sản phẩm.
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <!-- ============ MAIN ================ -->
-    <main class="main">
 
+    <!-- FEATURED PRODUCTS  -->
+        <section class="featured">
+            <div class="featured__top">
+                <div class="section__title">
+                    <div class="section__title-icon four-squares-icon">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                      </div>
+                    <span class="section__title-text">
+                        SẢN PHẨM NỔI BẬT
+                    </span>
+                </div>
+                <div class="featured__button">
+                    <button id="prev-button"><i class="fas fa-caret-left"></i></button>
+                    <button id="next-button"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="featured__content row">
+                <div class="featured__category col-3 list-unstyled">
+                    <li class="category__title category--active">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy khoan, cắt CNC
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy in phun khổ lớn
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy quét Canon 3D
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy hàn điện Alumina
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy khoan Decameta
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy phay đa năng CNC
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy mài, tiện DC 12V
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy khoan, cắt CNC
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy quay thông minh N3
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Motor R34C đa dụng
+                        </span>
+                    </li>
+
+                    <li class="category__title">
+                        <div class="category__icon four-squares-icon">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                        </div>
+                        <span class="category__text">
+                            Máy in laser màu 3D
+                        </span>
+                    </li>
+                </div>
+
+                <div class="featured__product col-9">
+                    <div id="featured__list" class="featured__list-item list-unstyled">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- SẢN PHẨM MỚI -->
+    <section class="newsp">
+        <div class="newsp__top">
+            <div class="section__title">
+                <div class="section__title-icon four-squares-icon">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                  </div>
+                <span class="section__title-text">
+                    SẢN PHẨM MỚI
+                </span>
+            </div>
+            <div class="newsp__top-btn">
+                <div class="newsp__button">
+                    <button id="maykhoan">Máy khoan</button>
+                    <button id="mayin3d">Máy in 3D</button>
+                    <button id="maycnc">Máy CNC</button>
+                    <button id="maytien">Máy tiện</button>
+                    <button id="maykhac">Máy khác</button>
+                </div>
+                <div class="newsp__prev-next">
+                    <button id="prev-newsp"><i class="fas fa-caret-left"></i></button>
+                    <button id="next-newsp"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="newsp__content">
+            <div id="newsp__list" class="list-unstyled">
+                
+            </div>
+        </div>
+
+        <div class="newsp__banner">
+            <img src="./assets/image/banner1.png" alt="Banner 1">
+            <img src="./assets/image/banner2.png" alt="Banner 2">
+        </div>
+    </section>
+
+
+    <!-- SẢN PHẨM BÁN CHẠY -->
+
+    <section class="hot">
+        <div class="hot__top">
+            <div class="section__title">
+                <div class="section__title-icon four-squares-icon">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                  </div>
+                <span class="section__title-text">
+                    SẢN PHẨM MỚI
+                </span>
+            </div>
+            <div class="hot__top-btn">
+                <div class="hot__button">
+                    <button id="maykhoan">Máy khoan</button>
+                    <button id="mayin3d">Máy in 3D</button>
+                    <button id="maycnc">Máy CNC</button>
+                    <button id="maytien">Máy tiện</button>
+                    <button id="maykhac">Máy khác</button>
+                </div>
+                <div class="hot__prev-next">
+                    <button id="prev-hot"><i class="fas fa-caret-left"></i></button>
+                    <button id="next-hot"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="hot__banner">
+            <img src="./assets/image/banner3.png" alt="Banner 3">
+        </div>
+    </section>
+    <!-- NEW PRODUCTS -->
+        <section class="new">
+            <div class="new__top">
+                <div class="section__title">
+                    <div class="section__title-icon four-squares-icon">
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                      </div>
+                    <span class="section__title-text">
+                        HÀNG MỚI VỀ
+                    </span>
+                </div>
+                <div class="new__button">
+                    <button id="prev-new"><i class="fas fa-caret-left"></i></button>
+                    <button id="next-new"><i class="fas fa-caret-right"></i></button>
+                </div>
+            </div>
+
+            <div class="new__main">
+                <div id="new__list">
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 
-    <!-- ============ FOOTER =============== -->
+    
+        <!-- =============== BRAND ============= -->
+        <section>
+            <div class="brand">
+                <div class="brand__container container">
+                    <div id="brand__prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div id="brand__list" class="brand__carousel">
+                        <img src="./assets/image/brand/infiniteflame.png" alt="infiniteflame logo">
+                        <img src="./assets/image/brand/artworker.png" alt="artworker logo">
+                        <img src="./assets/image/brand/medialine.png" alt="medialine logo">
+                        <img src="./assets/image/brand/techbrain.png" alt="techbrain logo">
+                        <img src="./assets/image/brand/mamolog.png" alt="mamolog logo">
+                        <img src="./assets/image/brand/infiniteflame.png" alt="infiniteflame logo">
+                        <img src="./assets/image/brand/artworker.png" alt="artworker logo">
+                        <img src="./assets/image/brand/medialine.png" alt="medialine logo">
+                        <img src="./assets/image/brand/techbrain.png" alt="techbrain logo">
+                        <img src="./assets/image/brand/mamolog.png" alt="mamolog logo">
+                    </div>
+                    <div id="brand__next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- ========= NEWSLETTER ============ -->
+        <section>
+            <div class="newsletter" style="background-image: url('./assets/image/newsletter/newsletter.png');">
+                <div class="newsletter__content">
+                    <div class="newsletter__title">
+                        Đăng ký để nhận tin tức khuyến mại hàng tuần
+                    </div>
+                    <div class="newsletter__email">
+                        <input type="text" class="newsletter__input" placeholder="Nhập email của bạn...">
+                        <button type="button" class="newsletter__btn btn--bg-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    <!-- ======== FOOTER =========== -->
     <footer class="footer container-fluid">
         <div class="footer__container container">
             <div class="footer__top">
@@ -767,6 +1191,14 @@
         </div>
 
     </footer>
+
+
+    <!-- ============= SCRIPT ===========  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>
