@@ -468,68 +468,24 @@
 
 
     <!-- ============ MAIN ================ -->
-    <main>
-        <div class="register">
-            <div class="register__container container">
-                <div class="register__top-title">
-                    <a href="index.html" class="register__link">
-                        <span>Trang chủ</span>
-                    </a>
-                    <i class="register__icon fa-solid fa-caret-right"></i>
-                    <span>
-                        Đăng ký
-                    </span>
+    <main class="main container">
+        <div class="error">
+            <div class="error__content text-center">
+                <div class="error__title">
+                    404 ERROR
                 </div>
-                <form id="registration-form">
-                    <div class="registration__title">
-                        THÔNG TIN CÁ NHÂN:
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="fullName">Họ và tên:</label>
-                            <input type="text" class="form-control" id="fullName" name="fullName" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="phone">Số điện thoại:</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="address">Địa chỉ:</label>
-                            <input type="text" class="form-control" id="address" name="address" required>
-                        </div>
-                    </div>
-                    <div class="checkbox">
-                        <span>
-                            <input type="checkbox" class="checkbox__check" name="subscribe">
-                        </span>
-                        <span class="checkbox__label">
-                            Đăng ký để nhận tin tức qua email
-                        </span>
-                    </div>
-                    <div class="registration__title">
-                        THÔNG TIN ĐĂNG NHẬP:
-                    </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="fullName">Họ và tên:</label>
-                            <input type="text" class="form-control" id="fullName-lg" name="fullName-lg" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="form-label required-label" for="email">Email:</label>
-                            <input type="email" class="form-control" id="email-lg" name="email-lg" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" class="form__btn btn--bg-black" onclick="goBackToHomePage()">QUAY LẠI</button>
-                        <button type="submit" class="form__btn btn--bg-primary">ĐĂNG KÝ</button>
-                    </div>
-                </form>
+                <div class="error__sub-title">
+                    Chúng tôi không tìm thấy kết quả nào phù hợp với tìm kiếm của bạn
+                    </br>
+                    Xin vui lòng quay về trang chủ
+                </div>
+                <div class="error__button">
+                    <button type="button" class="error_btn btn--bg-black" onclick="goBackToHomePage()">TRANG CHỦ</button>
+                </div>
+                
+            </div>
+            <div class="error__img">
+                <img src="./assets/image/product/10.png" alt="Error img">
             </div>
         </div>
         
