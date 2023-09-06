@@ -475,8 +475,12 @@
                     <span>Trang chủ</span>
                 </a>
                 <i class="product-category__icon fa-solid fa-caret-right"></i>
-                <span>
-                    Danh mục sản phẩm
+                <a href="product.html" class="product-category__link">
+                    <span>Danh mục sản phẩm</span>
+                </a>
+                <i class="product-category__icon fa-solid fa-caret-right"></i>
+                <span class="detail-title-name">
+                    <!-- Máy khoan CNC 3D -->
                 </span>
             </div>
             <div class="product-category__row row">
@@ -611,128 +615,6 @@
                             </span>
                         </li>
                     </div>
-                    <div class="product-category__price list-unstyled">
-                        <li class="product-category__title product-category--active">
-                            <div class="product-category__icon">
-                                <i class="product-category__icon fa-solid fa-dollar-sign"></i>
-                            </div>
-                            <span class="product-category__text">
-                                TÌM KIẾM THEO GIÁ
-                            </span>
-                        </li>
-
-                        <li class="product-category__title">
-                            <div class="product-category__icon four-squares-icon">
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                0 - 200.000 Đ (45)
-                            </span>
-                        </li>
-
-                        <li class="product-category__title">
-                            <div class="product-category__icon four-squares-icon">
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                200.000 Đ - 500.000 Đ (32)
-                            </span>
-                        </li>
-
-                        <li class="product-category__title">
-                            <div class="product-category__icon four-squares-icon">
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                500.000 Đ - 1.000.000 Đ (27)
-                            </span>
-                        </li>
-
-                        <li class="product-category__title">
-                            <div class="product-category__icon four-squares-icon">
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                1.000.000 Đ - 2.000.000 Đ (16)
-                            </span>
-                        </li>
-
-                        <li class="product-category__title">
-                            <div class="product-category__icon four-squares-icon">
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                                <div class="square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Trên 2.000.000 Đ
-                            </span>
-                        </li>
-
-                    </div>
-                    <div class="product-category__color list-unstyled">
-                        <li class="product-category__title product-category--active">
-                            <div class="product-category__icon">
-                                <i class="product-category__icon fa-solid fa-paintbrush"></i>
-                            </div>
-                            <span class="product-category__text">
-                                TÌM KIẾM THEO MÀU SẮC
-                            </span>
-                        </li>
-                        <li class="product-category__title">
-                            <div class="product-category__icon">
-                                <div class="color-square square--bg-red"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Màu đỏ (45)
-                            </span>
-                        </li>
-                        <li class="product-category__title">
-                            <div class="product-category__icon">
-                                <div class="color-square square--bg-yellow"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Màu vàng (32)
-                            </span>
-                        </li>
-                        <li class="product-category__title">
-                            <div class="product-category__icon">
-                                <div class="color-square square--bg-blue"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Màu xanh (27)
-                            </span>
-                        </li>
-                        <li class="product-category__title">
-                            <div class="product-category__icon">
-                                <div class="color-square"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Màu bạc (45)
-                            </span>
-                        </li>
-                        <li class="product-category__title">
-                            <div class="product-category__icon">
-                                <div class="color-square square--bg-black"></div>
-                            </div>
-                            <span class="product-category__text">
-                                Màu đen (9)
-                            </span>
-                        </li>
-
-                    </div>
                     <div class="product-category__free">
                         <div class="product-category__title product-category--active">
                             <div class="product-category__icon">
@@ -747,44 +629,147 @@
                     </div>
 
                 </div>
-                <div class="product-category__content col-9">
-                    <div class="product-category__control">
-                        <div class="control__select">
-                            <div class="select__sort">
-                                <div class="sort__text">Sắp xếp theo: </div>
-                                <select id="sort">
-                                    <option value="sortbyname">Tên sản phẩm</option>
-                                    <option value="sortbyprice">Giá sản phẩm</option>
-                                </select>
+                <div class="product-detail col-9">
+                    <div class="detail__main">
+                        <div class="detail__img">
+                            <div class="detail__main-img">
+                                <!-- <img src="./assets/image/product/1.png" alt=""> -->
                             </div>
-                            <div class="select__number">
-                                <div class="number__text">Show: </div>
-                                <select id="list-number">
-                                    <option value="9">9</option>
-                                    <option value="12">12</option>
-                                    <option value="12">15</option>
-                                    <option value="12">18</option>
-                                </select>
+                            <div class="detail__list-img">
+                                <div>
+                                    <img src="./assets/image/product/11.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./assets/image/product/12.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./assets/image/product/13.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./assets/image/product/14.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./assets/image/product/15.png" alt="">
+                                </div>
+                               
                             </div>
                         </div>
-                        <div class="control__choose">
-                            <button type="button" class="control-btn active-btn" id="detail-active-btn">
-                                <i class="fa-solid fa-bars"></i>
-                            </button>
-                            <button type="button" class="control-btn" id="grid-active-btn">
-                                <i class="fa-solid fa-grip"></i>
-                            </button>
+                        <div class="detail__content">
+                            <div class="detail__name">
+                                <!-- MÁY KHOAN CNC 3D -->
+                            </div>
+                            <div class="detail__rating">
+                                <div class="rating__content">
+                                    <img src="./assets/image/rating.png" alt="">
+                                    <span class="detail__comment-text">
+                                        <!-- (12 Đánh giá) -->
+                                    </span>
+                                </div>
+                                <a href="" class="rating__link">Gửi bình luận của bạn</a>
+                            </div>
+                            <div class="detail__price">
+                                GNY: 2.350.000 Đ
+                            </div>
+                            <div class="detail__preview">
+                                <div class="preview__title">
+                                    Thông tin sản phẩm: 
+                                </div>
+                                <div class="preview__text">
+                                    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
+                                </div>
+                            </div>
+                            <div class="detail__select">
+                                <div class="detail__size">
+                                    <div class="size-color__text">Size: </div>
+                                    <select id="size">
+                                        <!-- <option value="X">X</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option> -->
+                                    </select>
+                                </div>
+                                <div class="detail__color">
+                                    <div class="size-color__text">Màu sắc: </div>
+                                    <select id="color">
+                                        <!-- <option value="red">Đỏ</option>
+                                        <option value="yellow">Vàng</option>
+                                        <option value="blue">Xanh</option>
+                                        <option value="silver">Bạc</option>
+                                        <option value="black">Đen</option> -->
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="detail__button">
+                                <div class="detail__quantity">
+                                    <div class="quantity__input">
+                                        <input type="text" name="quantity" id="quantity" value="1">
+                                    </div>
+                                    <div class="quantity__button">
+                                        <button type="button" class="quantity-btn" id="increase" id="increase">
+                                            <i class="fa-solid fa-caret-up"></i>
+                                        </button>
+                                        <button type="button" class="quantity-btn" id="decrease" id="increase">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="buy__button">
+                                    <button type="button" class="buy-btn btn--bg-primary" id="buynow">
+                                        MUA NGAY
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="gallery">
-
+                    <div class="detail__infor">
+                        <div class="detail__infor-title">
+                            <div class="detail__full detail-active-btn">THÔNG TIN SẢN PHẨM</div>
+                            <div class="detail__cmt">ĐÁNH GIÁ - NHẬN XÉT</div>
+                            <div class="detail__tag">THẺ TAGS</div>
+                        </div>
+                    <div class="detail__infor-description">
+                        <div class="detail__infor-text">
+                            <!-- <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <p>
+                                Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p> -->
+                        </div>
                     </div>
-                    <div class="pagination">
-                        <button id="previous-page-button">Trang trước</button>
-                        <div id="page-numbers" class="page-numbers"></div>
-                        <button id="next-page-button">Trang sau</button>
-                    </div> 
+                    </div>
+                    <div class="similar">
+                        <div class="similar-top">
+                            <div class="similar__title">
+                                <div class="similar__title-icon four-squares-icon">
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                  </div>
+                                <span class="similar__title-text">
+                                    SẢN PHẨM TƯƠNG TỰ
+                                </span>
+                            </div>
+                            <div class="similar__button">
+                                <button id="prev-similar-button"><i class="fas fa-caret-left"></i></button>
+                                <button id="next-similar-button"><i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </div>
+                        <div id="similar-list" class="list-unstyled">
+                            
+                        </div>
+                    </div>
                 </div>
+
+                
             </div>
         </div>
         
@@ -1087,7 +1072,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/detail.js"></script>
 
 </body>
 
