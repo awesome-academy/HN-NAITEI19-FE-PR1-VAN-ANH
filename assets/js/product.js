@@ -35,8 +35,63 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.send();
 });
 
+const galleryList = document.querySelector(".gallery");
+console.log(galleryList);
+document.addEventListener("DOMContentLoaded", function () {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:3000/products', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const results = JSON.parse(xhr.responseText);
+            results.forEach((result) => {
+                const divItem = document.createElement('div');
+                divItem.classList.add("gallery__item")
+                const formattedPrice = result.price.toLocaleString('vi-VN').replace('₫', '');
+                divItem.innerHTML =
+                    `
+                    <div class="gallery__img">
+                                    <img src="${result.picture}" alt="">
+                                </div>
+                                <div class="gallery__content">
+                                    <div class="gallery__name">
+                                        ${result.name}
+                                    </div>
+                                    <div class="gallery__rating">
+                                        <img src="./assets/image/rating.png" alt="Rating">
+                                        <span class="gallery__comment"> (${result.comment} Đánh giá) </span>
+                                    </div>
+                                    <div class="gallery__description">
+                                        ${result.description}
+                                    </div>
+                                    <div class="gallery__price">
+                                        ${formattedPrice} Đ
+                                    </div>
+                                    <div class="gallery__button">
+                                        <button type="button" class="buy btn--bg-primary">MUA NGAY</button>
+                                        <button type="button" class="detail btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
+                                    </div>
+                                </div>
+                    `;
+                galleryList.appendChild(divItem);
+            });
+            initializeProductDisplay();
+            const detailButtons = document.querySelectorAll(".detail");
 
-var currentPage = 1;
+            detailButtons.forEach((button) => {
+                button.addEventListener("click", function() {
+                    const productId = this.getAttribute("data-product-id");
+                    window.location.href = `detail.html?id=${productId}`
+                });
+            });
+        }
+    };
+
+    xhr.send();
+});
+
+
+function initializeProductDisplay(){
+    var currentPage = 1;
 var itemsPerPage = 9;
 var products = document.querySelectorAll(".gallery__item");
 var totalPages = Math.ceil(products.length / itemsPerPage);
@@ -117,5 +172,5 @@ function updateProductDisplay(currentPage, itemsPerPage) {
 }
 
 updateProductDisplay(currentPage, itemsPerPage); 
-
+}
 
