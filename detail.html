@@ -27,7 +27,7 @@
 <body>
 
     <!-- ============ HEADER ============== -->
-    <header class="header">  
+    <header class="header">
         <div class="header__top container-fluid">
             <div class="header-top__container container">
                 <div class="header-top__left list-unstyled">
@@ -444,7 +444,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                            <a href="product.html" class="nav-link">SẢN PHẨM</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">TIN KHUYẾN MẠI</a>
@@ -459,7 +459,33 @@
                 </div>
 
                 <div class="nav__cart">
-                    <img src="./assets/image/cart.png" alt="cart icon">
+                    <div class="nav-cart__icon">
+                        <button type="button" id="cart-icon" onclick="ToCartPage()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <div class="cart-dropdown">
+                            <div class="cart-dropdown__content">
+                                <div class="cart-dropdown__list list-unstyled">
+                                    
+                                </div>
+                                <div class="cart-dropdown__pay">
+                                    <div class="cart-dropdown__total">
+                                        <div class="cart-dropdown__total-text">
+                                            TỔNG TIỀN:
+                                        </div>
+                                        <div class="cart-dropdown__total-money">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="cart-dropdown__button">
+                                        <button type="button" class="btn--bg-primary" onclick="ToPayPage()">THANH TOÁN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
 
             </div>
@@ -668,7 +694,7 @@
                                 <a href="" class="rating__link">Gửi bình luận của bạn</a>
                             </div>
                             <div class="detail__price">
-                                GNY: 2.350.000 Đ
+                                <!-- GNY: 2.350.000 Đ -->
                             </div>
                             <div class="detail__preview">
                                 <div class="preview__title">
@@ -702,17 +728,8 @@
                             <div class="detail__button">
                                 <div class="detail__quantity">
                                     <div class="quantity__input">
-                                        <input type="text" name="quantity" id="quantity" value="1">
+                                        <input type="number" name="quantity" id="quantity" value="1" min="1">
                                     </div>
-                                    <div class="quantity__button">
-                                        <button type="button" class="quantity-btn" id="increase" id="increase">
-                                            <i class="fa-solid fa-caret-up"></i>
-                                        </button>
-                                        <button type="button" class="quantity-btn" id="decrease" id="increase">
-                                            <i class="fa-solid fa-caret-down"></i>
-                                        </button>
-                                    </div>
-                                    
                                 </div>
                                 <div class="buy__button">
                                     <button type="button" class="buy-btn btn--bg-primary" id="buynow">
@@ -724,24 +741,19 @@
                     </div>
                     <div class="detail__infor">
                         <div class="detail__infor-title">
-                            <div class="detail__full detail-active-btn">THÔNG TIN SẢN PHẨM</div>
-                            <div class="detail__cmt">ĐÁNH GIÁ - NHẬN XÉT</div>
-                            <div class="detail__tag">THẺ TAGS</div>
+                            <div class="detail__full detail-active-btn" onclick="showInfor()">THÔNG TIN SẢN PHẨM</div>
+                            <div class="detail__cmt" onclick="showComments()">ĐÁNH GIÁ - NHẬN XÉT</div>
+                            <div class="detail__tag" onclick="showTags()">THẺ TAGS</div>
                         </div>
                     <div class="detail__infor-description">
-                        <div class="detail__infor-text">
-                            <!-- <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                            <p>
-                                Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p> -->
+                        <div class="detail__infor-text" id="productInfor">
+                           
+                        </div>
+                        <div class="detail__infor-text hidden" id="productComments">
+                            
+                        </div>
+                        <div class="detail__infor-text hidden" id="productTags">
+                           
                         </div>
                     </div>
                     </div>

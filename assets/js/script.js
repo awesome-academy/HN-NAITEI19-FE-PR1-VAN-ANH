@@ -1,4 +1,12 @@
 // POP UP
+function ToPayPage() {
+    window.location.href = "pay.html";
+}
+
+function ToCartPage() {
+    window.location.href = "cart.html";
+}
+
 
 const popup = document.querySelector(".popup");
 const popupCloseBtn = document.querySelector(".popup__close-btn");
@@ -9,9 +17,6 @@ const popupCloseFunc = function () { popup.classList.add('hidden') }
 popupCloseOverlay.addEventListener('click', popupCloseFunc);
 popupCloseBtn.addEventListener('click', popupCloseFunc);
 
-
-
-
 function goBackToHomePage() {
     window.location.href = "index.html";
 }
@@ -19,6 +24,7 @@ function goBackToHomePage() {
 function goToRegisterPage() {
     window.location.href = "register.html";
 }
+
 
 // FEATURED PRODUCTS
 const featuredList = document.getElementById('featured__list');
@@ -50,7 +56,7 @@ function getDataForFeatured() {
                         </div> 
                         <div class="item__button">
                             <button type="button" class="buy item__btn btn--bg-primary">MUA NGAY</button>
-                            <button type="button" class="detail item__btn btn--bg-black">XEM CHI TIẾT</button>
+                            <button type="button" class="detail item__btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                         </div>
                     </div>
                     `;
@@ -58,6 +64,14 @@ function getDataForFeatured() {
             });
 
             initializeProductList();
+            const detailButtons = document.querySelectorAll(".detail");
+
+            detailButtons.forEach((button) => {
+                button.addEventListener("click", function() {
+                    const productId = this.getAttribute("data-product-id");
+                    window.location.href = `detail.html?id=${productId}`
+                });
+            });
         }
     };
 
@@ -135,7 +149,7 @@ function getDataForNewProduct() {
                             </div>
                             <div class="new__button-list">
                                 <button type="button" class="buy new__btn-list btn--bg-primary">MUA NGAY</button>
-                                <button type="button" class="detail new__btn-list btn--bg-black">XEM CHI TIẾT</button>
+                                <button type="button" class="detail new__btn-list btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                             </div>
                         </div>
                     </div>
@@ -144,6 +158,14 @@ function getDataForNewProduct() {
             });
 
             initializeNewList();
+            const detailButtons = document.querySelectorAll(".detail");
+
+            detailButtons.forEach((button) => {
+                button.addEventListener("click", function() {
+                    const productId = this.getAttribute("data-product-id");
+                    window.location.href = `detail.html?id=${productId}`
+                });
+            });
         }
     };
 
@@ -245,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div> 
                         <div class="newsp__content-btn">
                             <button type="button" class="buy newsp__ct-btn btn--bg-primary">MUA NGAY</button>
-                            <button type="button" class="detail newsp__ct-btn btn--bg-black">XEM CHI TIẾT</button>
+                            <button type="button" class="detail newsp__ct-btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                         </div>
                     </div>
                         `;
@@ -253,6 +275,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 initializeNewSpList();
+                const detailButtons = document.querySelectorAll(".detail");
+
+                detailButtons.forEach((button) => {
+                    button.addEventListener("click", function() {
+                        const productId = this.getAttribute("data-product-id");
+                        window.location.href = `detail.html?id=${productId}`
+                    });
+                });
             }
         };
 
@@ -328,5 +358,200 @@ document.addEventListener("DOMContentLoaded", function() {
     nextButton.addEventListener("click", showNextBrands);
 
 });
+
+
+//Sản phẩm bán chạy
+
+const leftColumn = document.querySelector('.left-column');
+const centerColumn = document.querySelector('.center-column');
+const rightColumn = document.querySelector('.right-column');
+const prevHotButton = document.getElementById('prev-hot');
+const nextHotButton = document.getElementById('next-hot');
+
+const itemsPerPage = 5;
+let currentPage = 0;
+let currentProducts = [];
+function displayHotProduct (products) {
+    leftColumn.innerHTML = '';
+    centerColumn.innerHTML = '';
+    rightColumn.innerHTML = '';
+
+    products.forEach((product, index) => {
+        const column = index % 3 === 0 ? leftColumn : index % 3 === 1 ? rightColumn : centerColumn;
+        const formattedPrice = product.price.toLocaleString('vi-VN').replace('₫', '');
+
+        const hotItem = document.createElement('li');
+        hotItem.innerHTML = 
+        `
+        <div class="hot__item">
+        <div class="hot__img">
+            <img src="${product.picture}" alt="">
+        </div>
+        <div class="hot__price">
+            ${formattedPrice} Đ
+        </div>
+        <div class="hot__name">
+            ${product.name}
+        </div>
+        <div class="hot__rating">
+            <img src="./assets/image/rating.png" alt="Rating">
+            <span class="hot__comment">(${product.comment} Đánh giá)</span>
+        </div>
+        </div>
+        `;
+
+        column.appendChild(hotItem);
+    });
+}
+
+function fetchHotProducts(category, status) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:3000/products', true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const data = JSON.parse(xhr.responseText);
+        
+        const filteredProducts = data.filter(product => {
+            return product.category === category && product.status === status;
+        });
+        currentProducts = filteredProducts;
+
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const currentProductsToDisplay = currentProducts.slice(startIndex, endIndex);
+        displayHotProduct(currentProductsToDisplay);
+      } else if (xhr.readyState === 4 && xhr.status !== 200) {
+        console.error('Lỗi khi gọi API');
+      }
+    };
+    xhr.send();
+  }
+
+
+
+document.getElementById("hotmaykhoan").addEventListener("click", function () {
+    currentPage = 0;
+    fetchHotProducts("Máy khoan", "hot");
+});
+
+document.getElementById("hotmayin3d").addEventListener("click", function () {
+    currentPage = 0;
+    fetchHotProducts("Máy in 3D", "hot");
+});
+
+
+document.getElementById("hotmaycnc").addEventListener("click", function () {
+    currentPage = 0;
+    fetchHotProducts("Máy CNC", "hot");
+});
+
+document.getElementById("hotmaytien").addEventListener("click", function () {
+    currentPage = 0;
+    fetchHotProducts("Máy tiện", "hot");
+});
+
+document.getElementById("hotmaykhac").addEventListener("click", function () {
+    currentPage = 0;
+    fetchHotProducts("Máy khác", "hot");
+});
+fetchHotProducts("Máy khoan", "hot");
+
+nextHotButton.addEventListener('click', () => {
+    if (currentPage < Math.ceil(currentProducts.length / itemsPerPage) - 1) {
+        currentPage++;
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const currentProductsToDisplay = currentProducts.slice(startIndex, endIndex);
+        displayHotProduct(currentProductsToDisplay);
+    }
+});
+
+prevHotButton.addEventListener('click', () => {
+    if (currentPage > 0) {
+        currentPage--;
+        const startIndex = currentPage * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const currentProductsToDisplay = currentProducts.slice(startIndex, endIndex);
+        displayHotProduct(currentProductsToDisplay);
+    }
+});
+
+
+// hien thi gio hang
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cartDropdown = document.querySelector('.cart-dropdown__content');
+    const cartList = cartDropdown.querySelector('.cart-dropdown__list');
+    const totalPay = document.querySelector('.cart-dropdown__total-money');
+
+    function calculateTotal(cartData) {
+        let total = 0;
+        cartData.forEach((cartItem) => {
+            total += cartItem.quantity * cartItem.productPrice;
+        });
+
+        total = total + 0.1*total;
+
+        totalPay.textContent = total.toLocaleString('vi-VN') + ' Đ';
+    
+    }
+
+    function displayCartItems(cartData) {
+        cartList.innerHTML = '';
+
+        cartData.forEach((cartItem, index) => {
+            const cartItemElement = document.createElement('li');
+            cartItemElement.innerHTML = `
+                <div class="cart-dropdown__item">
+                    <div class="cart-item__img">
+                        <img src="${cartItem.productPicture}" alt="">
+                    </div>
+                    <div class="cart-item__content">
+                        <div class="cart-item__name">
+                            ${cartItem.productName}
+                        </div>
+                        <div class="cart-item__total">
+                            <span class="cart-item__quantity">${cartItem.quantity} x </span>
+                            <span class="cart-item__price">${cartItem.productPrice} Đ</span>
+                        </div>
+                    </div>
+                    <div class="cart-item__button">
+                        <button type="button">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            cartList.appendChild(cartItemElement);
+        });
+
+        calculateTotal(cartData);
+    }
+
+    function fetchCartItems() {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'http://localhost:3000/carts', true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const cartData = JSON.parse(xhr.responseText);
+                displayCartItems(cartData);
+            } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                console.error('Lỗi khi gọi API giỏ hàng');
+            }
+        };
+
+        xhr.send();
+    }
+
+    fetchCartItems();
+
+    const cartDropdownToggle = cartDropdown.querySelector('.cart-dropdown__toggle');
+    cartDropdownToggle.addEventListener('click', function () {
+        cartList.classList.toggle('show'); 
+    });
+});
+
 
 

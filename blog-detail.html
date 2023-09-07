@@ -27,7 +27,7 @@
 <body>
 
     <!-- ============ HEADER ============== -->
-    <header class="header">  
+    <header class="header">
         <div class="header__top container-fluid">
             <div class="header-top__container container">
                 <div class="header-top__left list-unstyled">
@@ -444,7 +444,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                            <a href="product.html" class="nav-link">SẢN PHẨM</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">TIN KHUYẾN MẠI</a>
@@ -459,7 +459,33 @@
                 </div>
 
                 <div class="nav__cart">
-                    <img src="./assets/image/cart.png" alt="cart icon">
+                    <div class="nav-cart__icon">
+                        <button type="button" id="cart-icon" onclick="ToCartPage()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <div class="cart-dropdown">
+                            <div class="cart-dropdown__content">
+                                <div class="cart-dropdown__list list-unstyled">
+                                    
+                                </div>
+                                <div class="cart-dropdown__pay">
+                                    <div class="cart-dropdown__total">
+                                        <div class="cart-dropdown__total-text">
+                                            TỔNG TIỀN:
+                                        </div>
+                                        <div class="cart-dropdown__total-money">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="cart-dropdown__button">
+                                        <button type="button" class="btn--bg-primary" onclick="ToPayPage()">THANH TOÁN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
 
             </div>

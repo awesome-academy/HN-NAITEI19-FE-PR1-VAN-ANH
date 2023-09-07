@@ -483,7 +483,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">SẢN PHẨM</a>
+                            <a href="product.html" class="nav-link">SẢN PHẨM</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">TIN KHUYẾN MẠI</a>
@@ -498,7 +498,33 @@
                 </div>
 
                 <div class="nav__cart">
-                    <img src="./assets/image/cart.png" alt="cart icon">
+                    <div class="nav-cart__icon">
+                        <button type="button" id="cart-icon" onclick="ToCartPage()">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <div class="cart-dropdown">
+                            <div class="cart-dropdown__content">
+                                <div class="cart-dropdown__list list-unstyled">
+                                    
+                                </div>
+                                <div class="cart-dropdown__pay">
+                                    <div class="cart-dropdown__total">
+                                        <div class="cart-dropdown__total-text">
+                                            TỔNG TIỀN:
+                                        </div>
+                                        <div class="cart-dropdown__total-money">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="cart-dropdown__button">
+                                        <button type="button" class="btn--bg-primary" onclick="ToPayPage()">THANH TOÁN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
 
             </div>
@@ -811,16 +837,44 @@
             </div>
             <div class="hot__top-btn">
                 <div class="hot__button">
-                    <button id="maykhoan">Máy khoan</button>
-                    <button id="mayin3d">Máy in 3D</button>
-                    <button id="maycnc">Máy CNC</button>
-                    <button id="maytien">Máy tiện</button>
-                    <button id="maykhac">Máy khác</button>
+                    <button id="hotmaykhoan">Máy khoan</button>
+                    <button id="hotmayin3d">Máy in 3D</button>
+                    <button id="hotmaycnc">Máy CNC</button>
+                    <button id="hotmaytien">Máy tiện</button>
+                    <button id="hotmaykhac">Máy khác</button>
                 </div>
                 <div class="hot__prev-next">
                     <button id="prev-hot"><i class="fas fa-caret-left"></i></button>
                     <button id="next-hot"><i class="fas fa-caret-right"></i></button>
                 </div>
+            </div>
+        </div>
+        <div class="hot__content">  
+            <div class="left-column list-unstyled">
+                
+                
+            </div>
+            <div class="center-column list-unstyled">
+                <li>
+                    <div class="hot__item">
+                        <div class="hot__img">
+                            <img src="./assets/image/product/1.png" alt="">
+                        </div>
+                        <div class="hot__price">
+                            1.350.000 Đ
+                        </div>
+                        <div class="hot__name">
+                            MAY KHOAN CNC 3D
+                        </div>
+                        <div class="hot__rating">
+                            <img src="./assets/image/rating.png" alt="Rating">
+                            <span class="hot__comment">(12 Đánh giá)</span>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div class="right-column list-unstyled">
+                
             </div>
         </div>
         <div class="hot__banner">
@@ -1199,6 +1253,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    
 
 </body>
 </html>

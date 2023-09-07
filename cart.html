@@ -495,64 +495,66 @@
 
     <!-- ============ MAIN ================ -->
     <main>
-        <div class="login">
-            <div class="login__container container">
-                <div class="login__top-title">
-                    <a href="index.html" class="login__link">
-                        <span>Trang chủ</span>
-                    </a>
-                    <i class="login__icon fa-solid fa-caret-right"></i>
-                    <span>
-                        Đăng nhập
-                    </span>
-                </div>
-                <div class="login__content">
-                    <div class="login__form">
-                        <form id="login-form">
-                            <div class="login__title">
-                                THÔNG TIN CÁ NHÂN:
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12 mb-3">
-                                    <label class="form-label required-label" for="fullName">Họ và tên:</label>
-                                    <input type="text" class="form-control" id="fullName" name="fullName" required>
-                                </div>
-                                <div class="col-12 mb-3">
-                                    <label class="form-label required-label" for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="login__question">
-                                <div class="login__checkbox">
-                                    <span>
-                                        <input type="checkbox" class="checkbox__check" name="subscribe">
-                                    </span>
-                                    <span class="login-checkbox__label">
-                                        Ghi nhớ mật khẩu
-                                    </span>
-                                </div>
-                                <div class="login__forgot">
-                                    Bạn quên mật khẩu
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <button type="submit" class="form__btn btn--bg-black">ĐĂNG NHẬP</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="login__register">
-                        <div class="login__title">
-                            BẠN CHƯA CÓ TÀI KHOẢN
-                        </div>
-                        <div class="login__description">
-                            Đăng ký tài khoản để mua hàng nhanh hơn. Theo dõi đơn đặt hàng, vận chuyển.</br>
-                            Cập nhật các tin tức sự kiện và các chương trình giảm giá của chúng tôi.
-                        </div>
-                        <button type="button" class="form__btn btn--bg-primary" onclick="goToRegisterPage()">ĐĂNG KÝ</button>
+        <div class="cart container">
+            <div class="blog__top">
+                <a href="index.html" class="blog__link">
+                    <span>Trang chủ</span>
+                </a>
+                <i class="blog__icon fa-solid fa-caret-right"></i>
+                <span>
+                    Giỏ hàng
+                </span>
+            </div>
+
+            <div class="cart__table">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <td class="stt">STT</td>
+                            <td class="cart-product">SẢN PHẨM</td>
+                            <td class="cart-infor">THÔNG TIN</td>
+                            <td class="cart-price">ĐƠN GIÁ</td>
+                            <td class="cart-quantity">SỐ LƯỢNG</td>
+                            <td class="cart-total">THÀNH TIỀN</td>
+                            <td class="cart-delete">XÓA</td>
+                        </tr>
+                    </thead>
+                    <tbody>
                         
+                    </tbody>
+
+
+                </table>
+            </div>
+
+            <div class="cart__money">
+                <div class="money__title">
+                    <div class="money__title-text">
+                        TỔNG TIỀN:
+                    </div>
+                    <div class="money__title-text">
+                        THUẾ (VAT):
+                    </div>
+                    <div class="money__title-text">
+                        THANH TOÁN:
                     </div>
                 </div>
+                <div class="money__money">
+                    <div class="money__total">
+                        <!-- 3900000 -->
+                    </div>
+                    <div class="money__vat">
+                        <!-- 390000 -->
+                    </div>
+                    <div class="money__pay">
+                        <!-- 4290000 -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__button">
+                <button type="button" class="btn--bg-black" onclick="ToProductPage()">TIẾP TỤC MUA HÀNG</button>
+                <button type="button" class="pay-btn btn--bg-primary" onclick="ToPayPage()">THANH TOÁN</button>
             </div>
         </div>
         
@@ -855,8 +857,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/login_register.js"></script>
-
+    <script src="./assets/js/cart.js"></script>
 </body>
 </html>
 
