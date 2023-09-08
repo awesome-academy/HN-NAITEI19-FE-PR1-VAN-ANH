@@ -55,8 +55,8 @@ function getDataForFeatured() {
                             <span class="item__comment"> (${result.comment} Đánh giá) </span>
                         </div> 
                         <div class="item__button">
-                            <button type="button" class="buy item__btn btn--bg-primary">MUA NGAY</button>
-                            <button type="button" class="detail item__btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
+                            <button type="button" class="detail-buy item__btn btn--bg-primary" data-product-id="${result.id}">MUA NGAY</button>
+                            <button type="button" class="detail-buy item__btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                         </div>
                     </div>
                     `;
@@ -64,7 +64,7 @@ function getDataForFeatured() {
             });
 
             initializeProductList();
-            const detailButtons = document.querySelectorAll(".detail");
+            const detailButtons = document.querySelectorAll(".detail-buy");
 
             detailButtons.forEach((button) => {
                 button.addEventListener("click", function() {
@@ -72,6 +72,7 @@ function getDataForFeatured() {
                     window.location.href = `detail.html?id=${productId}`
                 });
             });
+
         }
     };
 
@@ -148,8 +149,8 @@ function getDataForNewProduct() {
                                 ${formattedPrice} Đ
                             </div>
                             <div class="new__button-list">
-                                <button type="button" class="buy new__btn-list btn--bg-primary">MUA NGAY</button>
-                                <button type="button" class="detail new__btn-list btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
+                                <button type="button" class="detail-buy new__btn-list btn--bg-primary" data-product-id="${result.id}">MUA NGAY</button>
+                                <button type="button" class="detail-buy new__btn-list btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                             </div>
                         </div>
                     </div>
@@ -158,7 +159,7 @@ function getDataForNewProduct() {
             });
 
             initializeNewList();
-            const detailButtons = document.querySelectorAll(".detail");
+            const detailButtons = document.querySelectorAll(".detail-buy");
 
             detailButtons.forEach((button) => {
                 button.addEventListener("click", function() {
@@ -266,8 +267,8 @@ document.addEventListener("DOMContentLoaded", function () {
                             <span class="newsp__comment"> (${result.comment} Đánh giá) </span>
                         </div> 
                         <div class="newsp__content-btn">
-                            <button type="button" class="buy newsp__ct-btn btn--bg-primary">MUA NGAY</button>
-                            <button type="button" class="detail newsp__ct-btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
+                            <button type="button" class="detail-buy newsp__ct-btn btn--bg-primary" data-product-id="${result.id}">MUA NGAY</button>
+                            <button type="button" class="detail-buy newsp__ct-btn btn--bg-black" data-product-id="${result.id}">XEM CHI TIẾT</button>
                         </div>
                     </div>
                         `;
@@ -275,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 initializeNewSpList();
-                const detailButtons = document.querySelectorAll(".detail");
+                const detailButtons = document.querySelectorAll(".detail-buy");
 
                 detailButtons.forEach((button) => {
                     button.addEventListener("click", function() {
@@ -487,7 +488,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function calculateTotal(cartData) {
         let total = 0;
         cartData.forEach((cartItem) => {
-            total += cartItem.quantity * cartItem.productPrice;
+            if(cartItem.status=="cart")
+            {
+                total += cartItem.quantity * cartItem.productPrice;
+            }
         });
 
         total = total + 0.1*total;
@@ -498,9 +502,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function displayCartItems(cartData) {
         cartList.innerHTML = '';
-
+        let cartItemCount = 0;
         cartData.forEach((cartItem, index) => {
-            const cartItemElement = document.createElement('li');
+            if(cartItem.status == "cart"){
+                const cartItemElement = document.createElement('li');
+                cartItemCount++;
             cartItemElement.innerHTML = `
                 <div class="cart-dropdown__item">
                     <div class="cart-item__img">
@@ -516,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </div>
                     <div class="cart-item__button">
-                        <button type="button">
+                        <button type="button" class="delete-btn" data-cart-id="${cartItem.id}">
                             <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
@@ -524,9 +530,36 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             cartList.appendChild(cartItemElement);
+            }
         });
 
+        updateCartItemCount(cartItemCount);
+
         calculateTotal(cartData);
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+        deleteButtons.forEach((deleteButton) => {
+            deleteButton.addEventListener('click', function() {
+                const cartId = this.getAttribute('data-cart-id');
+                deleteCartItem(cartId);
+            })
+        })
+    }
+
+    function deleteCartItem(cartId) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('DELETE', `http://localhost:3000/carts/${cartId}`, true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 204) {
+                    fetchCartItems();
+                } else {
+                    console.error('Lỗi khi xóa mục trong giỏ hàng' + xhr.status);
+                }
+            }
+        };
+
+        xhr.send();
     }
 
     function fetchCartItems() {
@@ -545,6 +578,12 @@ document.addEventListener("DOMContentLoaded", function () {
         xhr.send();
     }
 
+    function updateCartItemCount(count) {
+        cartItemCount = count;
+        const cartItemCountElement = document.getElementById("cart-item-product");
+        cartItemCountElement.textContent = count;
+    }
+
     fetchCartItems();
 
     const cartDropdownToggle = cartDropdown.querySelector('.cart-dropdown__toggle');
@@ -552,6 +591,5 @@ document.addEventListener("DOMContentLoaded", function () {
         cartList.classList.toggle('show'); 
     });
 });
-
 
 

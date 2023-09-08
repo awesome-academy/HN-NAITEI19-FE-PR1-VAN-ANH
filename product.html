@@ -447,7 +447,7 @@
                             <a href="product.html" class="nav-link">SẢN PHẨM</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">TIN KHUYẾN MẠI</a>
+                            <a href="blog.html" class="nav-link">BLOG</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">DỊCH VỤ</a>
@@ -461,7 +461,8 @@
                 <div class="nav__cart">
                     <div class="nav-cart__icon">
                         <button type="button" id="cart-icon" onclick="ToCartPage()">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                            <span id="cart-item-product">0</span>
                         </button>
                         <div class="cart-dropdown">
                             <div class="cart-dropdown__content">
@@ -654,8 +655,8 @@
                                 <div class="square"></div>
                                 <div class="square"></div>
                             </div>
-                            <span class="product-category__text">
-                                0 - 200.000 Đ (45)
+                            <span class="product-category__text" id="max2">
+                                0 - 200.000 Đ
                             </span>
                         </li>
 
@@ -666,8 +667,8 @@
                                 <div class="square"></div>
                                 <div class="square"></div>
                             </div>
-                            <span class="product-category__text">
-                                200.000 Đ - 500.000 Đ (32)
+                            <span class="product-category__text" id="min2max5">
+                                200.000 Đ - 500.000 Đ
                             </span>
                         </li>
 
@@ -678,8 +679,8 @@
                                 <div class="square"></div>
                                 <div class="square"></div>
                             </div>
-                            <span class="product-category__text">
-                                500.000 Đ - 1.000.000 Đ (27)
+                            <span class="product-category__text" id="min5max10">
+                                500.000 Đ - 1.000.000 Đ 
                             </span>
                         </li>
 
@@ -690,8 +691,8 @@
                                 <div class="square"></div>
                                 <div class="square"></div>
                             </div>
-                            <span class="product-category__text">
-                                1.000.000 Đ - 2.000.000 Đ (16)
+                            <span class="product-category__text" id="min10max20">
+                                1.000.000 Đ - 2.000.000 Đ 
                             </span>
                         </li>
 
@@ -702,7 +703,7 @@
                                 <div class="square"></div>
                                 <div class="square"></div>
                             </div>
-                            <span class="product-category__text">
+                            <span class="product-category__text"id="min20">
                                 Trên 2.000.000 Đ
                             </span>
                         </li>
