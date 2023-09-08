@@ -20,6 +20,10 @@
     height: 100%;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
 /* INDEX */
 
 /* ============ POP UP ================== */
@@ -419,6 +423,22 @@
     position: absolute;
     right: 15px;
     cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+#cart-item-product {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary-color);
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 10px;
 }
 #cart-icon {
     color: #fff;
@@ -3341,6 +3361,75 @@
     font-weight: 400;
     padding: 20px;
     margin-left: 10px;
+}
+
+
+/* ============ PAY =============== */
+.pay {
+    padding-top: 30px;
+}
+
+.pay__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 30px;
+}
+.pay__infor {
+    margin-top: 100px;
+    color: #252525;
+    font-family: "Roboto", sans-serif;
+    font-size:14px;
+}
+
+.pay__table {
+    margin-bottom: 30px;
+}
+
+.pay__row {
+    gap: 30px;
+}
+
+.pay__col {
+    border: 1px solid #e1e1e1;
+    padding: 30px 20px 30px 30px;
+    border-radius: 10px;
+
+}
+.pay__col label {
+    font-weight: 500;
+}
+
+.col__title {
+    font-size: 20px;
+    color: #252525;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.select__pay {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+.pay__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.pay__button button {
+    border: none;
+    padding: 20px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
 }
 /* ============= RESPONSIVE =============== */
 /* MOBILE */
